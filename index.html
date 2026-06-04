@@ -460,12 +460,6 @@ async function submitResult() {
     skor, benar, total: questions.length
   });
 
-  alert('Data yang dikirim:\n' + 
-    'Nama: ' + nama + '\n' +
-    'Kelas: ' + kelas + '\n' +
-    'Skor: ' + skor + '\n' +
-    'URL: ' + SCRIPT_URL.substring(0,50));
-
   const img = new Image();
   img.onload = img.onerror = function() {
     document.getElementById('loadingOverlay').classList.remove('show');
